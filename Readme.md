@@ -33,12 +33,12 @@ source <path/to/venv/bin/activate>
 ### Use Certbot to setup SSL
 - To install Certbot, run
 ```sh
-sudo apt install certbot python3-certbot``.
+sudo apt install certbot python3-certbot
 ```
 
 - To issue a certificate for your domain, run:
 ```sh
-sudo certbot certonly --standalone -d yourdomain.com -d www.yourdomain.com``.
+sudo certbot certonly --standalone -d yourdomain.com -d www.yourdomain.com
 ```
 - Certbot saves the certificate files at:
 
