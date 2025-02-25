@@ -1,0 +1,6 @@
+fastapi
+hypercorn
+catboost
+pandas
+fasttext-wheel
+nltk

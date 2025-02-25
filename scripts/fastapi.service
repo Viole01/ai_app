@@ -1,0 +1,13 @@
+[Unit]
+Description=FastAPI Application
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/ai_app
+ExecStart=/home/ubuntu/ai_app/.ai_venv/bin/hypercorn app:app --bind 0.0.0.0:8000
+Restart=always
+Environment="PATH=/home/ubuntu/ai_app/.ai_venv"
+
+[Install]
+WantedBy=multi-user.target
